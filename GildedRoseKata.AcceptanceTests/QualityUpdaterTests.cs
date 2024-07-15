@@ -1,4 +1,4 @@
-using ApprovalTests;
+using ApprovalTests.Combinations;
 using ApprovalTests.Reporters;
 
 namespace GildedRoseKata.AcceptanceTests
@@ -11,9 +11,15 @@ namespace GildedRoseKata.AcceptanceTests
         [Test]
         public void UpdateQuality_ApprovalTests()
         {
-            IList<Item> items = [new Item() { Name = "Foo", Quality = 0, SellIn = 0 }];
-            _sut.UpdateQuality(items);
-            Approvals.VerifyAll(items, "Items");
+            IEnumerable<string> names = ["Foo"];
+            IEnumerable<int> qualities = [0];
+            IEnumerable<int> sellIns = [0];
+            CombinationApprovals.VerifyAllCombinations((name, quality, sellIn) =>
+            {
+                var item = new Item() { Name = name, Quality = quality, SellIn = sellIn };
+                _sut.UpdateQuality([item]);
+                return item;
+            }, names, qualities, sellIns);
         }
     }
 }

@@ -20,7 +20,7 @@ public class QualityUpdater
         }
         if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
         {
-            if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+            if (false)
             {
                 if (item.Quality > 0)
                 {
@@ -64,7 +64,7 @@ public class QualityUpdater
 
             if (item.SellIn < 0)
             {
-                if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (false)
                 {
                     if (item.Quality > 0)
                     {
@@ -83,7 +83,7 @@ public class QualityUpdater
         }
         else
         {
-            if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+            if (true)
             {
                 if (item.Quality > 0)
                 {
@@ -127,7 +127,7 @@ public class QualityUpdater
 
             if (item.SellIn < 0)
             {
-                if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
+                if (true)
                 {
                     if (item.Quality > 0)
                     {

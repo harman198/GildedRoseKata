@@ -1,14 +1,10 @@
 namespace GildedRoseKata.AcceptanceTests
 {
-    public class Tests
+    public class GildedRoseTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
 
         [Test]
-        public void Test1()
+        public void UpdateQuality_ApprovalTests()
         {
             Assert.Pass();
         }

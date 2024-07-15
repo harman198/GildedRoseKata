@@ -1,1 +1,6 @@
 ﻿[Foo,0,0] => Foo:	Quality - 0	SellIn--1
+[Foo,-1,0] => Foo:	Quality - -1	SellIn--1
+[Foo,1,0] => Foo:	Quality - 0	SellIn--1
+[Foo,49,0] => Foo:	Quality - 47	SellIn--1
+[Foo,50,0] => Foo:	Quality - 48	SellIn--1
+[Foo,51,0] => Foo:	Quality - 49	SellIn--1

@@ -12,7 +12,7 @@ namespace GildedRoseKata.AcceptanceTests
         public void UpdateQuality_ApprovalTests()
         {
             IEnumerable<string> names = ["Foo"];
-            IEnumerable<int> qualities = [0];
+            IEnumerable<int> qualities = [0, -1, 1, 49, 50, 51];
             IEnumerable<int> sellIns = [0];
             CombinationApprovals.VerifyAllCombinations((name, quality, sellIn) =>
             {

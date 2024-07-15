@@ -59,7 +59,7 @@ public class QualityUpdater
 
             if (item.SellIn < 0)
             {
-                if (item.Name != "Aged Brie")
+                if (true)
                 {
                     if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
                     {
@@ -88,7 +88,7 @@ public class QualityUpdater
         }
         else
         {
-            if (item.Name != "Aged Brie" && item.Name != "Backstage passes to a TAFKAL80ETC concert")
+            if (false && item.Name != "Backstage passes to a TAFKAL80ETC concert")
             {
                 if (item.Quality > 0)
                 {
@@ -104,7 +104,7 @@ public class QualityUpdater
                 {
                     item.Quality = item.Quality + 1;
 
-                    if (item.Name == "Backstage passes to a TAFKAL80ETC concert")
+                    if (false)
                     {
                         if (item.SellIn < 11)
                         {
@@ -132,7 +132,7 @@ public class QualityUpdater
 
             if (item.SellIn < 0)
             {
-                if (item.Name != "Aged Brie")
+                if (false)
                 {
                     if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
                     {

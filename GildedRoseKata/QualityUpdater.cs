@@ -25,51 +25,22 @@ public class QualityUpdater
         }
         if (item.Name == "Sulfuras, Hand of Ragnaros")
         {
-            if (item.Quality > 0)
-            {
-                if (false)
-                {
-                }
-            }
-
-            if (false)
-            {
-            }
-
-            if (item.SellIn < 0)
-            {
-                if (item.Quality > 0)
-                {
-                    if (false)
-                    {
-                    }
-                }
-            }
             return;
         }
         else
         {
             if (item.Quality > 0)
             {
-                if (true)
-                {
-                    item.Quality = item.Quality - 1;
-                }
+                item.Quality = item.Quality - 1;
             }
 
-            if (true)
-            {
-                item.SellIn = item.SellIn - 1;
-            }
+            item.SellIn = item.SellIn - 1;
 
             if (item.SellIn < 0)
             {
                 if (item.Quality > 0)
                 {
-                    if (true)
-                    {
-                        item.Quality = item.Quality - 1;
-                    }
+                    item.Quality = item.Quality - 1;
                 }
             }
             return;

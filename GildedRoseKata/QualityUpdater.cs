@@ -14,6 +14,7 @@ public class QualityUpdater
     private static void DoStuff(Item item)
     {
         DoStuff2(item);
+        return;
     }
 
     private static void DoStuff2(Item item)

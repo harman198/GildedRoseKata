@@ -29,13 +29,11 @@ public class QualityUpdater
             {
                 if (false)
                 {
-                    item.Quality = item.Quality - 1;
                 }
             }
 
             if (false)
             {
-                item.SellIn = item.SellIn - 1;
             }
 
             if (item.SellIn < 0)
@@ -44,7 +42,6 @@ public class QualityUpdater
                 {
                     if (false)
                     {
-                        item.Quality = item.Quality - 1;
                     }
                 }
             }

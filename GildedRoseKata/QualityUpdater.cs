@@ -23,6 +23,14 @@ public class QualityUpdater
             DoStuffBackstage(item);
             return;
         }
+        if (item.Name == "Sulfuras, Hand of Ragnaros")
+        {
+
+        }
+        else
+        {
+
+        }
         DoStuff2(item);
         return;
     }

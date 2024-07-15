@@ -27,13 +27,13 @@ public class QualityUpdater
         {
             if (item.Quality > 0)
             {
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                if (false)
                 {
                     item.Quality = item.Quality - 1;
                 }
             }
 
-            if (item.Name != "Sulfuras, Hand of Ragnaros")
+            if (false)
             {
                 item.SellIn = item.SellIn - 1;
             }
@@ -42,7 +42,7 @@ public class QualityUpdater
             {
                 if (item.Quality > 0)
                 {
-                    if (item.Name != "Sulfuras, Hand of Ragnaros")
+                    if (false)
                     {
                         item.Quality = item.Quality - 1;
                     }
@@ -54,13 +54,13 @@ public class QualityUpdater
         {
             if (item.Quality > 0)
             {
-                if (item.Name != "Sulfuras, Hand of Ragnaros")
+                if (true)
                 {
                     item.Quality = item.Quality - 1;
                 }
             }
 
-            if (item.Name != "Sulfuras, Hand of Ragnaros")
+            if (true)
             {
                 item.SellIn = item.SellIn - 1;
             }
@@ -69,7 +69,7 @@ public class QualityUpdater
             {
                 if (item.Quality > 0)
                 {
-                    if (item.Name != "Sulfuras, Hand of Ragnaros")
+                    if (true)
                     {
                         item.Quality = item.Quality - 1;
                     }

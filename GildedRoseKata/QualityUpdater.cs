@@ -23,7 +23,20 @@ public class QualityUpdater
             DoStuffBackstage(item);
             return;
         }
-        else
+        if (item.Quality > 0)
+        {
+            if (item.Name != "Sulfuras, Hand of Ragnaros")
+            {
+                item.Quality = item.Quality - 1;
+            }
+        }
+
+        if (item.Name != "Sulfuras, Hand of Ragnaros")
+        {
+            item.SellIn = item.SellIn - 1;
+        }
+
+        if (item.SellIn < 0)
         {
             if (item.Quality > 0)
             {
@@ -32,24 +45,8 @@ public class QualityUpdater
                     item.Quality = item.Quality - 1;
                 }
             }
-
-            if (item.Name != "Sulfuras, Hand of Ragnaros")
-            {
-                item.SellIn = item.SellIn - 1;
-            }
-
-            if (item.SellIn < 0)
-            {
-                if (item.Quality > 0)
-                {
-                    if (item.Name != "Sulfuras, Hand of Ragnaros")
-                    {
-                        item.Quality = item.Quality - 1;
-                    }
-                }
-            }
-            return;
         }
+        return;
     }
 
     private static void DoStuffBackstage(Item item)

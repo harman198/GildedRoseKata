@@ -23,6 +23,12 @@ public class QualityUpdater
             DoStuffBackstage(item);
             return;
         }
+        DoStuff2(item);
+        return;
+    }
+
+    private static void DoStuff2(Item item)
+    {
         if (item.Quality > 0)
         {
             if (item.Name != "Sulfuras, Hand of Ragnaros")
@@ -46,7 +52,6 @@ public class QualityUpdater
                 }
             }
         }
-        return;
     }
 
     private static void DoStuffBackstage(Item item)

@@ -1,8 +1,7 @@
-﻿using GildedRoseKata;
+﻿namespace GildedRoseKata;
 
-class QualityUpdater
+public class QualityUpdater
 {
-
     public void UpdateQuality(IList<Item> items)
     {
         for (var i = 0; i < items.Count; i++)

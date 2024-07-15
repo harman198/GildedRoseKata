@@ -11,7 +11,7 @@ namespace GildedRoseKata.AcceptanceTests
         [Test]
         public void UpdateQuality_ApprovalTests()
         {
-            IEnumerable<string> names = ["Foo"];
+            IEnumerable<string> names = ["Foo", "Aged Brie", "Backstage passes to a TAFKAL80ETC concert", "Sulfuras, Hand of Ragnaros", string.Empty];
             IEnumerable<int> qualities = [0, -1, 1, 49, 50, 51, int.MinValue, int.MaxValue];
             IEnumerable<int> sellIns = [0, -1, 1, 5, 6, 7, 10, 11, 12, int.MinValue, int.MaxValue];
             CombinationApprovals.VerifyAllCombinations((name, quality, sellIn) =>

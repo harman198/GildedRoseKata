@@ -78,10 +78,6 @@ public class QualityUpdater
                 }
                 else
                 {
-                    if (item.Quality < 50)
-                    {
-                        item.Quality = item.Quality + 1;
-                    }
                 }
             }
             return;
@@ -106,21 +102,6 @@ public class QualityUpdater
 
                     if (false)
                     {
-                        if (item.SellIn < 11)
-                        {
-                            if (item.Quality < 50)
-                            {
-                                item.Quality = item.Quality + 1;
-                            }
-                        }
-
-                        if (item.SellIn < 6)
-                        {
-                            if (item.Quality < 50)
-                            {
-                                item.Quality = item.Quality + 1;
-                            }
-                        }
                     }
                 }
             }
@@ -134,20 +115,6 @@ public class QualityUpdater
             {
                 if (false)
                 {
-                    if (item.Name != "Backstage passes to a TAFKAL80ETC concert")
-                    {
-                        if (item.Quality > 0)
-                        {
-                            if (item.Name != "Sulfuras, Hand of Ragnaros")
-                            {
-                                item.Quality = item.Quality - 1;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        item.Quality = item.Quality - item.Quality;
-                    }
                 }
                 else
                 {
